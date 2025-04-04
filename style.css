@@ -87,13 +87,9 @@
 }
 
 
-/*.links a:hover{
-    background-color: var(--Green);
-    color: var(--Grey_900);
-}*/
-
-/*navigate the links only using their keyboard.*/
-.links a:focus-visible{
+.links a:hover{
     background-color: var(--Green);
     color: var(--Grey_900);
 }
+
+
