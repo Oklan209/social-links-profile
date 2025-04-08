@@ -1,0 +1,48 @@
+/* 🌟 기본 스타일 */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 카드 스타일 */
+.profile-card {
+    background: #1e1e1e;
+    padding: clamp(10px, 4vw, 25px);  /* 화면 크기에 따라 자동 조정 */
+    border-radius: 10px;
+    text-align: center;
+    width: clamp(280px, 50vw, 400px); /* 최소 280px, 최대 400px */
+}
+
+/* 프로필 이미지 크기 자동 조정 */
+.profile-img {
+    width: clamp(50px, 10vw, 90px);
+    height: clamp(50px, 10vw, 90px);
+    border-radius: 50%;
+}
+
+/* 버튼 리스트 */
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(5px, 1vw, 10px); /* 간격도 자동 조정 */
+    margin-top: clamp(10px, 3vw, 20px);
+}
+
+/* 버튼 스타일 */
+.link-list a {
+    display: block;
+    background: #333;
+    color: white;
+    padding: clamp(8px, 2vw, 15px);  /* 버튼 크기도 자동 조정 */
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(14px, 1.5vw, 18px); /* 글씨 크기 자동 조정 */
+    transition: background 0.3s;
+}
